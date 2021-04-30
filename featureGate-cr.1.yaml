@@ -1,0 +1,9 @@
+apiVersion: poc.kubevirt.io/v1
+kind: FeatureGate
+metadata:
+  name: featuregates
+spec:
+  config:
+    features:
+      featureA: true
+      featureC: true

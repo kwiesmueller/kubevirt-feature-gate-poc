@@ -1,0 +1,11 @@
+apiVersion: poc.kubevirt.io/v1
+kind: FeatureGate
+metadata:
+  name: featuregates
+spec:
+  config:
+    features:
+      featureA: true
+      # as the gate is gone now, let's remove it from our config
+      # this should be fine and remain fine after a rollback
+      # featureC: true
